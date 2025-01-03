@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.buenasweb.com
+
+# Sitemaps
+Sitemap: https://www.buenasweb.com/sitemap.xml

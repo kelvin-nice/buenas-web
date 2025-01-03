@@ -2,11 +2,33 @@
 import Image from "next/image";
 import Link from "next/link";
 /* import Link from "next/link"; */
+import Head from "next/head";
 
 
 export default function Home() {
   return (
-    <main >
+
+    <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'Buenas Web',
+              url: 'https://www.buenasweb.com',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: 'https://www.buenasweb.com/search?q={search_term_string}',
+                'query-input': 'required name=search_term_string',
+              },
+            }),
+          }}
+        />
+      </Head>
+
+    
 
       <section className="w-full bg-[#000] ">
         <div className="relative mx-auto max-w-[1440px] h-[530px] md:h-[490px]  md:bg-no-repeat md:bg-cover md:bg-bottom md:bg-[url('/banner-01.jpg')] " >
@@ -108,15 +130,9 @@ export default function Home() {
             >
               Ver más
             </Link>
-          </div>
-
-          
+          </div>,
         </div>
       </section>
-
-
-
-
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -182,7 +198,7 @@ export default function Home() {
 
 
 
-    </main>
+    </>
 
 
   )

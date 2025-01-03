@@ -15,8 +15,8 @@ const Trabajos = () => {
 
 
       <div className="container mx-auto flex px-5 pt-12 pb-6 md:flex-row flex-col items-center">
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"> 
-          <Image className="object-cover object-center rounded" alt='trabajo-1' src="work-1.svg" width={720} height={400}/>
+        <div className="overflow-hidden lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"> <Link href='https://www.exportadoraelsol.com/newsite/' target='_blank' >
+          <Image className="object-cover object-center rounded transform transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer" alt='trabajo-1' src="/elsol-06.png" width={720} height={400}/> </Link>
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">Exportadora el Sol
@@ -24,7 +24,7 @@ const Trabajos = () => {
           <p className="mb-8 text-black text-base">Empresa exportadora de materias primas como: la Tara, produtos botánicos y otros productos para snacks.</p>
           <div className="flex justify-center">
             <Link href='https://www.exportadoraelsol.com/newsite/' target='_blank' >
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-10 focus:outline-none hover:bg-indigo-600 rounded-3xl text-lg">Ver sitio</button>
+            <button className="inline-flex w-full px-10 py-3 mt-6 text-base font-medium tracking-wide text-white capitalize bg-gradient-to-r from-[#2042c9] to-[#E03122] rounded-md hover:bg-[#f74231] focus:outline-none focus:ring focus:ring-opacity-50">Ver sitio</button>
             </Link>
           </div>
         </div>
@@ -35,16 +35,19 @@ const Trabajos = () => {
 
       <div className="container mx-auto flex px-5 pt-12 pb-6 md:flex-row flex-col items-center">
         <div className=" order-2 md:order-1 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-0 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-          <br className="hidden lg:inline-block" />readymade gluten
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Urbanova S.A.C.
+        
           </h1>
-          <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+          <p className="mb-8 leading-relaxed">El sitio web de Urbanova ofrece servicios de desarrollo inmobiliario, incluyendo diseño, construcción y gestión de proyectos sostenibles y modernos en Perú. Además, se enfoca en brindar soluciones integrales para viviendas, oficinas y espacios comerciales.</p>
           <div className="flex justify-center">
-          <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-10 focus:outline-none hover:bg-indigo-600 rounded-3xl text-lg">Ver sitio</button>
+            <Link href='https://www.urbanova.com/' target='_blank' >
+          <button className="inline-flex w-full px-10 py-3 mt-6 text-base font-medium tracking-wide text-white capitalize bg-gradient-to-r from-[#2042c9] to-[#E03122] rounded-md hover:bg-[#f74231] focus:outline-none focus:ring focus:ring-opacity-50">Ver sitio</button>
+          </Link>
           </div>
         </div>
-        <div className=" order-1 md:order-2 lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-          <Image className="object-cover object-center rounded" alt='trabajo-1' src="work-1.svg" width={720} height={400} />
+        <div className=" overflow-hidden order-1 md:order-2 lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <Link href='https://www.urbanova.com/' target='_blank' >
+          <Image className="object-cover object-center rounded transform transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer" alt='trabajo-1' src="/urbanova-05.png" width={720} height={400} /> </Link>
         </div>
       </div>
 
@@ -53,16 +56,18 @@ const Trabajos = () => {
 
       
       <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"> 
-          <Image className="object-cover object-center rounded" alt='trabajo-1' src="work-1.svg" width={720} height={400}/>
+        <div className="overflow-hidden lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"> 
+        <Link href='https://www.consulting-projectsgroup.com/' target='_blank'  >
+          <Image className="object-cover object-center rounded transform transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer" alt='trabajo-1' src="/consulting-07.png" width={720} height={400}/> </Link>
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-            <br className="hidden lg:inline-block" />readymade gluten
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Consulting projects.
           </h1>
-          <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+          <p className="mb-8 leading-relaxed">Empresa de Consultoría y Construcción, dedicada a brindar la mejor solución técnica a los diversos requerimientos de Ingeniería.</p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-10 focus:outline-none hover:bg-indigo-600 rounded-3xl text-lg">Ver sitio</button>
+          <Link href='https://www.consulting-projectsgroup.com/' target='_blank' >
+            <button className="inline-flex w-full px-10 py-3 mt-6 text-base font-medium tracking-wide text-white capitalize bg-gradient-to-r from-[#2042c9] to-[#E03122] rounded-md hover:bg-[#f74231] focus:outline-none focus:ring focus:ring-opacity-50">Ver sitio</button>
+          </Link>
           </div>
         </div>
       </div>

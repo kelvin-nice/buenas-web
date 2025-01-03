@@ -11,8 +11,6 @@ import Image from 'next/image';
 
 
 
-
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,21 +22,22 @@ const Navbar = () => {
   }
   
   return (
-    <nav className="  bg-[#000000] text-[#F3F3F3] p-4 w-full sticky border-b-[1px] border-[#383838] z-50 top-0 mb-[0px] ">
+
+    <nav className="  bg-[#000000] text-[#F3F3F3] p-4 w-full  border-b-[1px] border-[#383838]  mb-[0px] ">
       <div className="  flex justify-between items-center mx-auto max-w-[1440px] " >
 
-        <Image src="logo.svg" alt="Logo" width={94} height={94} className='md:ml-8' />
+        <Image src="/logo.svg" alt="Logo" width={94} height={94} className='md:ml-8' />
         
 
 
         {/* Menu escritorio */}
         <div className=" hidden md:flex  " > {/* coloco "max" para manera la animación en vez de 'block' : 'hidden' */}
           <ul className='list-none flex md:gap-8 lg:gap-12 m-0 p-0 text-center text-lg' >
-            <li ><Link href="/" className=' text-white  hover:text-slate-300 active:text-white focus:text-white focus:font-semibold'>  Home </Link></li>
-            <li ><Link href="/nosotros" className=' text-white  hover:text-slate-300 active:text-white focus:text-white focus:font-semibold'>Nosotros</Link></li>
+            <li ><Link href="/" className=' text-white  hover:text-slate-300 active:text-white focus:text-white'>  Home </Link></li>
+            <li ><Link href="/nosotros" className=' text-white  hover:text-slate-300 active:text-white focus:text-white '>Nosotros</Link></li>
 
             {/* submenu SERVICIOS */}
-            <li onClick={toggle} className='z-50' ><button  className='relative text-white  hover:text-slate-300 active:text-white focus:text-white focus:font-semibold flex items-center gap-2'>Servicios <IoIosArrowDown className='text-white' /> </button>
+            <li /* onMouseOver={toggle} */ onClick={toggle} className='z-50' ><button  className='relative text-white  hover:text-slate-300 active:text-white focus:text-white flex items-center gap-2'>Servicios <IoIosArrowDown className='text-white' /> </button>
             {isOpen && (
 
               <ul className='list-none t-0 bg-white border rounded-lg border-gray-700 shadow-xl m-2 absolute text-left text-base z-50 transition-transform duration-300 ease-in-out' >
@@ -58,7 +57,7 @@ const Navbar = () => {
 
         
         <div className="flex md:mr-8 " >
-          <a  href="tel:+51915176767" className="text-base hidden md:flex hover:underline font-semibold " > <Image src="phone.svg" alt="phone" width={20} height={20} className='hidden md:block mr-2' /> 915 173 767 </a>
+          <a  href="tel:+51915176767" className="text-base hidden md:flex hover:underline font-semibold " > <Image src="/phone.svg" alt="phone" width={20} height={20} className='hidden md:block mr-2' /> 915 173 767 </a>
         </div>
 
         {/* Botón hamburguesa */}

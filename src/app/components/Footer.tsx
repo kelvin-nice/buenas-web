@@ -58,7 +58,7 @@ const Footer = () => {
     <div className=" max-w-[1200px] mx-auto mt-5 flex flex-wrap justify-between mb-4 space-y-6 ">
     {/* Card 1 */}
     <div className=" mb-8 p-4 w-72">
-        <Image src="logo-pie.svg" alt="Buenas web, profesionales en diseño web" width={150} height={60} className=" ml-0 pl-0 my-0 " />
+        <Image src="/logo-pie.svg" alt="Buenas web, profesionales en diseño web" width={150} height={60} className=" ml-0 pl-0 my-0 " />
         <p className="text-lg leading-6 text-gray-300 mb-5">
         Expertos profesionales en páginas web.
         </p>
@@ -89,9 +89,9 @@ const Footer = () => {
 
     {/* Card 2 */}
     <div className="p-4 w-72">
-        <h3 className="text-xl font-medium text-white mb-4">Ubíquenos:</h3>
+        <h3 className="text-xl font-medium text-white mb-4">Horario de atención:</h3>
         <p className="text-base leading-5 text-gray-300">
-        Por motivo del protocolo nacional, solo atendemos de manera virtual.
+        De Lunes a Sábado de 8 a.m. a 8 p.m.
         </p>
     </div>
 

@@ -1,10 +1,39 @@
 import React from 'react'
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: 'Tiendas Virtuales | Buenas Web',
+  description: 'Diseñamos tiendas virtuales optimizadas para que vendas más online.',
+  keywords: ['tienda virtual', 'ecommerce', 'diseño web', 'ventas online', 'desarrollo web'],
+  openGraph: {
+    title: 'Tiendas Virtuales | Buenas Web',
+    description: 'Creamos tiendas virtuales funcionales y atractivas para potenciar tus ventas online.',
+    url: 'https://www.buenasweb.com/servicios/tienda-virtual',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Diseño de Tiendas Virtuales - Buenas Web',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tiendas Virtuales | Buenas Web',
+    description: 'Desarrollo de tiendas virtuales con diseño moderno y optimización SEO.',
+    images: ['/og-image.jpg'],
+  },
+};
+
+
 
 const TiendaVirtual = () => {
   return (
+
     <section className='w-full'>
-    
     
         <div className="container mx-auto flex px-5 pt-12 pb-6 md:flex-row flex-col items-center sm:mb-20 sm:mt-14">
                 <div className=" order-2 md:order-1 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-0 md:mb-0 items-center text-center">

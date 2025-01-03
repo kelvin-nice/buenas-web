@@ -4,41 +4,20 @@ import Image from 'next/image'
 
 const Nosotros = () => {
   return (
-    <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
+    <section className="overflow-hidden py-6  ms-pt-20 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
-            <div className="w-full px-4 lg:w-6/12">
+            <div className=" mx-4 ms:w-full md:w-1/2 px-4">
               <div className="flex items-center -mx-3 sm:-mx-4">
-                <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div className="py-3 sm:py-4">
+              <div className="relative z-10 my-4">
                     <Image
-                      src="/diseñador.png"
-                      alt="diseñador UX UI"
-                      width={328}
-                      height={486}
-                      className="w-full rounded-2xl"
-                    />
-                  </div>
-                  <div className="py-3 sm:py-4">
-                    <Image
-                      src="/programadores.png"
-                      alt="Programador"
-                      width={328}
-                      height={389}
-                      className="w-full rounded-2xl"
-                    />
-                  </div>
-                </div>
-                <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div className="relative z-10 my-4">
-                    <Image
-                      src="/programadores.png"
+                      src="/creativos.jpg"
                       alt="Analista SEO"
-                      width={328}
-                      height={389}
+                      width={500}
+                      height={450}
                       className="w-full rounded-2xl"
                     />
-                    <span className="absolute -right-7 -bottom-7 z-[-1]">
+                    {/* <span className="absolute -right-7 -bottom-7 z-[-1]">
                       <svg
                         width={134}
                         height={106}
@@ -607,29 +586,24 @@ const Nosotros = () => {
                           fill="#3056D3"
                         />
                       </svg>
-                    </span>
+                    </span> */}
                   </div>
-                </div>
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+            <div className="m-4 w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
-                <span className="block mb-4 text-lg font-semibold text-primary">
-                  Why Choose Us
+                <span className="block mb-4 text-lg font-semibold text-primary text-blue-800">
+                ¿Porqué elegirnos?
                 </span>
                 <h2 className="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
-                  Make your customers happy by giving services.
+                  Hacer crecer a nuestros clientes nos da satisfacción.
                 </h2>
                 <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                somos un equipo de profesionales apasionados por el diseño de páginas web modernas, la creación de tiendas virtuales funcionales y la optimización SEO de alto impacto. 
                 </p>
                 <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                  A domain name is one of the first steps to establishing your
-                  brand. Secure a consistent brand image with a domain name that
-                  matches your business.
+                Nuestro compromiso se centra en ofrecer soluciones digitales personalizadas que potencien la presencia en línea de nuestros clientes, combinando creatividad, tecnología avanzada y estrategias efectivas para garantizar resultados excepcionales. Con cada proyecto, priorizamos la excelencia, asegurando una experiencia digital única que conecta marcas con sus audiencias de manera auténtica y efectiva.
                 </p>
                 <a
                   href="javascript:void(0)"
